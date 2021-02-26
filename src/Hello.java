@@ -12,6 +12,11 @@ class Hello {
 		total = kor + eng + math;
 		avg = total / 3;
 
-		System.out.printf("total is %d\n", total);
+		System.out.print("┌────────────────────┐\n");
+		System.out.print("│      　성적 출력      │\n");
+		System.out.print("└────────────────────┘\n");
+		
+		System.out.print("국어 1 : 0\n");
+		System.out.print("국어 2 : 0\n");
 	}
 }
