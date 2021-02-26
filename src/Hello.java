@@ -11,7 +11,7 @@ class Hello {
 
 		total = kor + eng + math;
 		avg = total / 3;
-
+		//comment test
 		System.out.print("┌────────────────────┐\n");
 		System.out.print("│      　성적 출력      │\n");
 		System.out.print("└────────────────────┘\n");
