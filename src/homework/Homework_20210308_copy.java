@@ -2,7 +2,7 @@ package homework;
 
 import java.util.Scanner;
 
-public class Homework_20210308 {
+public class Homework_20210308_copy {
 	public static void main(String[] args) {
 		// Mission : 국어, 영어, 수학 점수를 입력받아 0~100사이가 아닐 경우 다시 입력 받고, 이상 없을 시 각각 합계, 평균을
 		// 출력하도록 코드를 작성하시오.
@@ -18,18 +18,12 @@ public class Homework_20210308 {
 		String inputText = "점수 입력 : ";
 		Scanner scan = new Scanner(System.in);
 
-		while (!isValid) {
-			System.out.print(sub_kor + inputText);
+		again:while(true) {
+			System.out.print("국어점수입력:");
 			score_kor = Integer.parseInt(scan.nextLine());
-			isValid = checkValidation(score_kor, sub_kor);
-			
-			System.out.print(sub_eng + inputText);
-			score_eng = Integer.parseInt(scan.nextLine());
-			isValid = checkValidation(score_eng, sub_eng);
-
-			System.out.print(sub_math + inputText);
-			score_math = Integer.parseInt(scan.nextLine());
-			isValid = checkValidation(score_math, sub_math);
+			switch(score_kor) {
+			default : if(score_kor<0) break again;
+			}
 		}
 		
 		int total = score_kor + score_eng + score_math;
