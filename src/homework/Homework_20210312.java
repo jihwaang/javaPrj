@@ -5,13 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class Homework_20210312 {
 
 	public static void main(String[] args) throws IOException, FileNotFoundException {
 		Scanner sc = new Scanner(new InputStreamReader(new FileInputStream("res/제주특별자치도_코로나현황_20201214.csv"), "euc-kr"));
-
+		
 		String[] firstLine = sc.nextLine().split(",");
 		int sums[] = new int[firstLine.length];
 		
